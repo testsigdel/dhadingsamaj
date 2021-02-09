@@ -1,0 +1,206 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif ;
+    color: #222;
+}
+.ds-navbar{
+   background-color:#ea8a8a!important ; 
+}
+.navbar{
+    padding:.0;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.nav-link{
+    font-size: 1.1em !important;
+}
+
+.carousel-inner img{
+    width: 100%;
+    max-height: 768px;
+}
+
+
+
+footer{
+    color: #fff;
+    background-color: #000;
+}
+
+footer hr.dhline{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(152 35 35);
+}
+
+
+.ds-social{
+    margin: auto;
+    background-color: #222;
+    width: 100%;
+    height: 190px;
+}
+
+/* social media */
+
+  
+.ds-social ul {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  .ds-social ul li {
+    list-style: none;
+  }
+  
+  .ds-social ul li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+  }
+  
+  .ds-social ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  .ds-social ul li a .fab {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+  }
+  
+  .ds-social ul li.ds-fb a:hover .fab {
+    color: #3b5998;
+  }
+  
+  .ds-social ul li.ds-twt a:hover .fab {
+    color: #00aced;
+  }
+  
+  .ds-social ul li.ds-insta a:hover .fab {
+    color: #e4405f;
+  }
+
+
+
+  /* contact us */
+
+  .contact{
+    padding: 4%;
+    
+}
+
+
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    border-radius: 50%;
+    margin-bottom: 15%;
+    width: 100%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #264d25;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
+
+/* image gallery */
+
+.ds-image-gallery .nav-tabs a.nav-link:hover{
+    border-bottom: #fff solid 1px;
+}
+.ds-image-gallery nav ul li a{
+    max-width: 250px; 
+    color: #c1c1c1;
+    text-align: left; 
+    margin: auto;
+    padding: 1.1em !important;
+}
+.ds-image-gallery nav ul li a p{
+    padding: 5px 5px !important;
+}
+.ds-image-gallery nav ul li a.active h5{
+    border-bottom: rgb(247, 32, 32) solid 2px;
+}
+
+.ds-image-gallery a>img{
+    width:100%
+}
+
+:root {
+    /* Not my favorite that line-height has to be united, but needed */
+    --lh: 1.4rem;
+  }
+
+.truncate-overflow {
+    --max-lines: 6;
+    position: relative;
+    max-height: calc(var(--lh) * var(--max-lines));
+    overflow: hidden;
+    padding-right: 1rem; /* space for ellipsis */
+  }
+  .truncate-overflow::before {
+    position: absolute;
+    content: "...";
+    /* tempting... but shows when lines == content */
+    /* top: calc(var(--lh) * (var(--max-lines) - 1)); */
+    
+    /*
+    inset-block-end: 0;
+    inset-inline-end: 0;
+    */
+    bottom: 0;
+    right: 0;
+  }
+  .truncate-overflow::after {
+    content: "";
+    position: absolute;
+    /*
+    inset-inline-end: 0;
+    */
+    right: 0;
+    /* missing bottom on purpose*/
+    width: 1rem;
+    height: 1rem;
+    background: white;
+  }
